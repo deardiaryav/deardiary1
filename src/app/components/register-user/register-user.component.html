@@ -1,0 +1,108 @@
+<!-- <div class="container">
+    <form ><input type="text" name="userName" id="userName" placeholder="User Name">
+        <input type="email" name="emailInput" id="emailInput" placeholder="Email">
+        <input type="password" name="passwordInput" id="passwordInput" placeholder="Eassword">
+        <input type="submit" name="login" id="login" >
+    </form>
+</div> -->
+
+<div class="center">
+
+  <div id="errormes"> <div class="x"><a (click)="close()" >X</a></div><div class="deardiary">Dear Diary</div><div class="errormessage1">PWA with JWT</div>
+  <p class="teambody" style="text-decoration: underline;">AKSHAT JAIN </p>
+  <p class="teambody">IIT BOMBAY</p>
+  <p class="teambody">22B0690</p></div>
+  
+<div class="container">
+  
+  <input class="c-checkbox" type="checkbox" id="start">
+  <input class="c-checkbox" type="checkbox" id="progress2">
+  <input class="c-checkbox" type="checkbox" id="progress3">
+  <input class="c-checkbox" type="checkbox" id="finish">
+  <div class="c-form__progress" id ="progressbar"></div>
+  <p id ="welcome">Login using your Credentials</p>
+  <div id="appballoons" >
+    <app-balloons></app-balloons></div>
+  <div class="someone" id ="someone">
+    <a class="someone" routerLink="/login" >
+      <span class="right"></span>
+    </a>
+  </div>
+  <div class="error" id="errormess">User Already Exists.</div>
+  <div class="c-formContainer">
+    <div class="c-welcome" id ="welcomemessage">Welcome aboard!</div>
+    
+    
+    <form class="c-form" #formdata="ngForm" (ngSubmit)="newLoginData(formdata.value)" >
+      <div class="c-form__group">
+        <label class="c-form__label" for="username">
+                      <input
+                      name="name"
+                          type="text"
+                          id="username"
+                          class="c-form__input"
+                          placeholder=" "
+                          pattern="[^\s]+"
+                          required
+                           ngModel >
+  
+                      <label class="c-form__next"  for="progress2" role="button">
+                          <span class="c-form__nextIcon"></span>
+                      </label>
+  
+        <span class="c-form__groupLabel">What is your Name?</span>
+        <b class="c-form__border"></b>
+        </label>
+      </div>
+  
+      <div class="c-form__group">
+        <label class="c-form__label" for="femail">
+                      <input
+                      name="userid"
+                          type="text"
+                          id="femail"
+                          class="c-form__input"
+                          placeholder=" "
+                          maxlength="20"
+                          required
+                          ngModel>
+  
+                      <label class="c-form__next" for="progress3" role="button">
+                          <span class="c-form__nextIcon"></span>
+                      </label>
+  
+        <span class="c-form__groupLabel">What UserID do you want?</span>
+        <b class="c-form__border"></b>
+        </label>
+      </div>
+  
+      <div class="c-form__group">
+        <label class="c-form__label" for="fpass">
+                      <input
+                      name="pswd"
+                          type="password"
+                          id="fpass"
+                          class="c-form__input"
+                          placeholder=" "
+                          required
+                           ngModel>
+  
+                      <button type="submit" class="c-form__next" for="finish" role="button"id="ab">
+                          <span class="c-form__nextIcon"></span>
+                      </button>
+  
+        <span class="c-form__groupLabel">Create your password.</span>
+        <b class="c-form__border"></b>
+        </label>
+      </div>
+  
+      <label class="c-form__toggle" for="start" >Register<span class="c-form__toggleIcon"></span></label>
+    </form>
+    <div class="loginlink"><a routerLink="/login" id="disappear"  class="linke">Already have an account? Login </a></div>
+
+  </div>
+  </div>
+  
+  
+  <!-- pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" -->
+  <div class="team"><div id = "left"><a (click)="team()"><h2 class="o">Our</h2><h2 class="t">Team</h2></a></div></div>
